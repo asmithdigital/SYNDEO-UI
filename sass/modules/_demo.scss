@@ -1,0 +1,90 @@
+
+// Demo
+// -------------------------
+
+// Panels delimiter
+.demo-row {
+  margin-bottom: 20px
+}
+.demo-panel-title {
+  margin-bottom: 20px;
+  padding-top: 20px;
+
+  small {
+    color: mix($base, $inverse, 66%);
+    font-size: inherit;
+    font-weight: 400;
+  }  
+}
+// Shift blocks to fit design
+.demo-navigation {
+  margin-bottom: -4px;
+  margin-top: -10px;
+}
+.demo-pager {
+  margin-top: -10px;
+}
+.demo-tooltips {
+  height: 126px;
+
+  // Needed just for the demo. Don't use it in producion ;)
+  .tooltip {
+    left: -8px !important;
+    position: relative !important;
+    top: -8px !important;
+  }  
+}
+.demo-headings {
+  margin-bottom: 12px;
+}
+.demo-tiles {
+  margin-bottom: 46px
+}
+
+.demo-icons {
+  font-size: 32px;
+  margin-left: -20px;
+  padding-left: 20px;
+
+  .demo-content {
+    margin: 0 0 0 -35px;
+    
+    > span {
+      display: inline-block;
+      margin: 0 0 32px 35px;
+      width: 24px;
+      font-size: 24px;
+    }  
+  }
+}
+
+.bs-icons{
+  div{
+    float: left;
+    width: 25%;
+    line-height: 25px;
+    font-size: $icon-normal;
+    color: mix($base, $inverse, 66%);
+    span{
+      color: $base;
+    }
+  }
+}
+
+.demo-icons-tooltip {
+  bottom: 0;
+  color: mix($base, $inverse, 30%);
+  font-size: 12px;
+  left: 100%;
+  margin-left: 0 !important;
+  position: absolute;
+  width: 80px;
+}
+
+.demo-samples {
+  margin-bottom: 46px;
+}
+.demo-video {  
+  padding-top: 95px;
+  @include border-radius(6px);
+}

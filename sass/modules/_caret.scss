@@ -1,0 +1,26 @@
+
+// Caret
+// -------------------------
+
+.caret {
+  @include caret();
+  @include transform(scale(1.001));
+}
+
+.dropup .caret,
+.dropup .btn-large .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-bottom-width: 8px;
+}
+
+.btn-mini .caret,
+.btn-small .caret,
+.btn-large .caret {
+  margin-top: 7px;
+}
+
+.btn-large .caret {
+  border-top-width: 8px;
+  border-right-width: 6px;
+  border-left-width: 6px;
+}

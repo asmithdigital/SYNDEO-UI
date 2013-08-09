@@ -1,0 +1,170 @@
+
+@mixin inline-block {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin drop-ie-gradient {
+  filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
+}
+
+@mixin dropdown-arrow-inverse {
+  border-bottom-color: $base !important;
+  border-top-color: $base !important;
+}
+
+@mixin transition($properties) {
+  -webkit-transition: $properties;
+     -moz-transition: $properties;
+       -o-transition: $properties;
+          transition: $properties;
+  -webkit-backface-visibility: hidden;
+}
+
+@mixin swap-button-color($color, $hover, $active) {
+  background-color: $color;
+
+  &:hover,
+  &:focus,
+  .btn-group:focus &.dropdown-toggle {
+    background-color: $hover;
+  }
+  &:active,
+  .btn-group.open &.dropdown-toggle,
+  &.active {
+    background-color: $active;
+  }
+}
+
+@mixin dropdown-arrow($color: $base, $top: 5px, $left: 15px, $size: 9px) {
+  &:before {
+    content: "";
+    border-style: solid;
+    border-width: 0 $size $size $size;
+    border-color: transparent transparent $color transparent;
+    height: 0;
+    position: absolute;
+    left: $left;
+    top: $top;
+    width: 0;
+    // Make corners smooth
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@mixin box-sizing($boxmodel: border-box) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+@mixin caret($color: $base) {
+  border-left-width: 6px;
+  border-right-width: 6px;
+  border-top-width: 8px;
+  border-bottom-color: $color;
+  border-style: solid;
+  border-bottom-style: none;
+  border-top-color: $color;
+  @include transition(.25s);
+}
+
+@mixin placeholder-color($color) {
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &.placeholder {
+    color: $color;
+  }
+}
+
+@mixin input-states($color) {
+  border-color: $color;
+  color: $color;
+  @include box-shadow(none);
+
+  &:focus {
+    @include box-shadow(none);
+  }
+}
+
+@mixin progress {
+  background: mix($base, white, 10%);
+  border-radius: 32px;
+  height: $progress-height;
+  @include box-shadow(none);
+  @include drop-ie-gradient();
+  
+  // Alternate Colors
+  // --------------------------------------------------
+  
+  .bar {
+    background: $firm;
+    @include box-shadow("none !important");
+    @include drop-ie-gradient();
+  }
+  .bar-success {
+    background-color: $success;
+    @include drop-ie-gradient();
+  }
+  .bar-warning {
+    background-color: $warning;
+    @include drop-ie-gradient();
+  }
+  .bar-danger {
+    background-color: $danger;
+    @include drop-ie-gradient();
+  }
+  .bar-info {
+    background-color: $info;
+    @include drop-ie-gradient();
+  }
+}
+
+@mixin mask($arguments) {
+  -webkit-mask: $arguments;
+          mask: $arguments;
+}
+
+// User select
+// For selecting text on the page
+@mixin user-select($select) {
+  -webkit-user-select: $select;
+     -moz-user-select: $select;
+      -ms-user-select: $select;
+       -o-user-select: $select;
+          user-select: $select;
+}
+
+// Color swatches grid
+@mixin calc-color($first-name, $first-color, $second-name, $second-color ) {
+  .palette-#{$first-name} {
+    background-color: $first-color;
+  }
+  .palette-#{$second-name} {
+    background-color: $second-color;
+  }  
+}
+
+@mixin animation($properties) {
+  -webkit-animation: $properties;
+     -moz-animation: $properties;
+       -o-animation: $properties;
+          animation: $properties;
+}
