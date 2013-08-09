@@ -1,1 +1,804 @@
-Hello, world
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>SYNDEO - UI kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/flat-ui.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--[if lte IE 7]><link href="css/ie.css" rel="stylesheet"><![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../assets/ico/favicon.png">
+</head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Common UI elements
+        </h1>
+      </header>
+
+      <div class="row demo-row">
+        <div class="span12">          
+          <h2 class="mbl">Color Palette</h2>
+           <div class="row mbl">
+            <div class="span3">
+              <dl class="palette palette-Ast">
+                <dt>#79b05e</dt>
+                <dd>Ast</dd>
+              </dl>
+              <dl class="palette palette-Vst">
+                <dt>#9662ab</dt>
+                <dd>Vst</dd>
+              </dl>
+            </div>
+
+            <div class="span3">
+              <dl class="palette palette-Sst">
+                <dt>#009fe3</dt>
+                <dd>Sst</dd>
+              </dl>
+              <dl class="palette palette-Dst">
+                <dt>#f28d4f</dt>
+                <dd>Dst</dd>
+              </dl>
+            </div>
+
+            <div class="span3">
+              <dl class="palette palette-Cst">
+                <dt>#67bdc7</dt>
+                <dd>Cst</dd>
+              </dl>
+              <dl class="palette palette-Pst">
+                <dt>#5e89ba</dt>
+                <dd>Pst</dd>
+              </dl>
+            </div>
+
+            <div class="span3">
+              <dl class="palette palette-D-blue">
+                <dt>#06374f</dt>
+                <dd>D-blue</dd>
+              </dl>
+              <dl class="palette palette-Cntrl">
+                <dt>#82afc5</dt>
+                <dd>Cntrl</dd>
+              </dl>
+            </div>
+           
+          </div> <!-- /color swatches -->
+        </div>
+
+      </div><!-- /Palette -->
+    
+
+     <div class="row demo-row">
+      <div class="span12">
+        <h2 class="mbl">Toolbars</h2>
+        
+        <div class="btn-toolbar">
+
+          <div class="btn-group">
+              <a href="#" class="btn btn-info"><i class="icon-white icon-thumbs-up"></i></a>
+              <a href="#" class="btn btn-info"><i class="icon-white icon-heart"></i></a>
+              <a href="#" class="btn btn-info"><i class="icon-white icon-share-alt"></i></a>
+          </div>
+          
+          <div class="btn-group">
+              <a href="#" class="btn btn-info"><i class="icon-white icon-trash"></i></a>
+          </div>
+
+          <div class="btn-group">
+            <a class="btn" href="#"><i class="icon-align-left"></i></a>
+            <a class="btn" href="#"><i class="icon-align-center"></i></a>
+            <a class="btn" href="#"><i class="icon-align-right"></i></a>
+            <a class="btn" href="#"><i class="icon-align-justify"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div> <!-- /Toolbars -->
+
+
+
+     <div class="row demo-row">
+        <div class="span12">
+          <h2 class="mbl">Buttons</h2>
+         <div class="btn-toolbar" style="margin: 0;">
+            <button class="btn">Action</button>
+            <button class="btn btn-primary">Action</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-inverse">Inverse</button>
+          </div>
+          <!-- /Buttons -->
+          <h3>Button size variations</h3>
+          <p>
+            <button class="btn btn-large btn-primary" type="button">Large button</button>
+            <button class="btn btn-large" type="button">Large button</button>
+          </p>
+          <p>
+            <button class="btn btn-primary" type="button">Default button</button>
+            <button class="btn" type="button">Default button</button>
+          </p>
+          <p>
+            <button class="btn btn-small btn-primary" type="button">Small button</button>
+            <button class="btn btn-small" type="button">Small button</button>
+          </p>
+          <p>
+            <button class="btn btn-mini btn-primary" type="button">Mini button</button>
+            <button class="btn btn-mini" type="button">Mini button</button>
+          </p>
+          <h3>With dropdown</h3>
+          <div class="btn-toolbar" style="margin: 0;">
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverse <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group --> 
+          </div>
+          <!-- /Buttons - drop down -->
+          <h3>With dropdown version 2</h3>
+          <div class="btn-toolbar" style="margin: 0;">
+            <div class="btn-group">
+              <button class="btn">Action</button>
+              <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-primary">Action</button>
+              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-danger">Danger</button>
+              <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-warning">Warning</button>
+              <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-success">Success</button>
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-info">Info</button>
+              <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-inverse">Inverse</button>
+              <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <!-- /btn-group --> 
+          </div>
+          <!-- /Buttons - drop down 2-->         
+        </div>
+     </div><!-- /Buttons row-->
+
+<div class="row demo-row">
+  <div class="span8">
+    <h2 class="mbl">Form</h2>
+    <div class="row-fluid">
+  <form class="form-horizontal">
+    <fieldset>
+      <div id="legend">
+        <legend class="">Payment</legend>
+      </div>
+ 
+      <!-- Name -->
+      <div class="control-group">
+        <label class="control-label"  for="username">Card Holder's Name</label>
+        <div class="controls">
+          <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+        </div>
+      </div>
+ 
+      <!-- Card Number -->
+      <div class="control-group">
+        <label class="control-label" for="email">Card Number</label>
+        <div class="controls">
+          <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+        </div>
+      </div>
+ 
+      <!-- Expiry-->
+      <div class="control-group">
+        <label class="control-label" for="password">Card Expiry Date</label>
+        <div class="controls">
+          <select class="span5" name="herolist" id="expiry_month">
+            <option></option>
+            <option value="01">Jan (01)</option>
+            <option value="02">Feb (02)</option>
+            <option value="03">Mar (03)</option>
+            <option value="04">Apr (04)</option>
+            <option value="05">May (05)</option>
+            <option value="06">June (06)</option>
+            <option value="07">July (07)</option>
+            <option value="08">Aug (08)</option>
+            <option value="09">Sep (09)</option>
+            <option value="10">Oct (10)</option>1
+            <option value="11">Nov (11)</option>
+            <option value="12">Dec (12)</option>
+          </select>
+          <select class="span4" name="herolist">
+            <option value="13">2013</option>
+            <option value="14">2014</option>
+            <option value="15">2015</option>
+            <option value="16">2016</option>
+            <option value="17">2017</option>
+            <option value="18">2018</option>
+            <option value="19">2019</option>
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            <option value="23">2023</option>
+          </select>
+        </div>
+      </div>
+ 
+      <!-- CVV -->
+      <div class="control-group">
+        <label class="control-label"  for="password_confirm">Card CVV</label>
+        <div class="controls">
+          <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="span2">
+        </div>
+      </div>
+ 
+      <!-- Save card -->
+      <div class="control-group">
+        <div class="controls">
+          <label class="checkbox" for="save_card">
+            <input type="checkbox" id="save_card" data-toggle="checkbox">Save card on file?
+          </label>
+        </div>
+      </div>
+ 
+      <!-- Submit -->
+      <div class="control-group">
+        <div class="controls">
+          <button class="btn btn-success">Pay Now</button>
+        </div>
+      </div>
+ 
+    </fieldset>
+  </form>
+</div>
+  </div> 
+</div> <!-- /Payment Form -->
+
+    <div class="row demo-row">
+      <div class="span12">    
+    
+      <h2 class="mbl">Tooltips</h2>
+      <div class="tooltip-demo">
+        <p class="muted">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="" data-original-title="A much longer tooltip belongs right here to demonstrate the max-width we apply.">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral. </p>
+      </div>
+      
+      </div> 
+    </div><!-- /Tooltips Row -->
+
+      <h2>Custom UI elements</h2>
+        <div class="row demo-row">
+          <div class="span3">
+            <h3>Custom Select</h3>
+              <select name="herolist" value="X-Men" class="select-block span3">
+                <option value="0">Choose hero</option>
+                <option value="1">Spider Man</option>
+                <option value="2">Wolverine</option>
+                <option value="3">Captain America</option>
+                <option value="X-Men" selected="selected">X-Men</option>
+                <option value="Crocodile">Crocodile</option>
+              </select>
+            </div><!-- / Select -->
+          <div class="span3">
+          <h3>Checkboxes</h3>
+          <label class="checkbox" for="checkbox1">
+            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+            Unchecked
+          </label>
+          <label class="checkbox" for="checkbox2">
+            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+            Checked
+          </label>
+          <label class="checkbox" for="checkbox3">
+            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+            Disabled unchecked
+          </label>
+          <label class="checkbox" for="checkbox4">
+            <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked="">
+            Disabled checked
+          </label>
+        </div> <!-- /checkboxes span3 -->
+
+        <div class="span3">
+          <h3>Radio Buttons</h3>
+          <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+            Radio is off
+          </label>
+          <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+            Radio is on
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
+            Disabled radio is off
+          </label>
+          <label class="radio">
+            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
+            Disabled radio is on
+          </label>
+        </div> <!-- /radios span3 -->
+
+        <div class="span3">
+          <h3>Switches</h3>
+
+          <table width="100%">
+            <tr>
+              <td width="50%" class="pbm">
+                <input type="checkbox" checked="" data-toggle="switch" />
+              </td>
+
+              <td class="pbm">
+                <input type="checkbox" data-toggle="switch" />
+              </td>
+            </tr>
+            <tr>
+              <td class="pbm">
+                <div class="switch switch-square"
+                  data-on-label="<i class='fui-check'></i>"
+                  data-off-label="<i class='fui-cross'></i>">
+                  <input type="checkbox" />
+                </div>
+              </td>
+
+              <td class="pbm">
+                <div class="switch switch-square"
+                  data-on-label="<i class='fui-check'></i>"
+                  data-off-label="<i class='fui-cross'></i>">
+                  <input type="checkbox" checked="" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" disabled data-toggle="switch" />
+              </td>
+
+              <td>
+                <input type="checkbox" checked disabled data-toggle="switch" />
+              </td>
+            </tr>
+          </table>
+        </div> <!-- /toggles span3 -->
+
+        </div><!-- /Custom UI elements -->
+
+
+    <h2 class="mbl">Paragraph</h2>
+    <div class="row demo-row">
+      <div class="span4">
+        <ul class="content-list">
+          <li>Perspiciatis unde omnis iste</li>
+            <li>Voluptatem accusantium doloremque</li>
+            <li>Aperiam totem natus
+              <ul>
+                <li>Accusantium doloremque omnis</li>
+                <li>Iste Perspiciatis omnis</li>
+              </ul>
+            </li>
+            <li>Totem natus omnis
+              <ul>
+                <li>Accusantium doloremque omnis</li>
+                <li>Iste perspiciatis omnis
+                  <ul>
+                    <li>Accusantium doloremque omnis</li>
+                    <li>Iste Perspiciatis omnis</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Voluptatem accusantium doloremque</li>
+            <li>Accusantium doloremque omnis</li>
+          </ul>
+      </div>
+      <div class="span4">
+        <ol>
+          <li>Perspiciatis unde omnis iste</li>
+            <li>Voluptatem accusantium doloremque</li>
+            <li>Aperiam totem natus
+              <ol>
+                <li>Accusantium doloremque omnis</li>
+                <li>Iste Perspiciatis omnis</li>
+              </ol>
+            </li>
+            <li>Totem natus omnis
+              <ol>
+                <li>Accusantium doloremque omnis</li>
+                <li>Iste perspiciatis omnis
+                  <ol>
+                    <li>Accusantium doloremque omnis</li>
+                    <li>Iste Perspiciatis omnis</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>Voluptatem accusantium doloremque</li>
+            <li>Accusantium doloremque omnis</li>
+          </ol>
+      </div>
+      <div class="span4">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+    </div>
+    
+    <!-- /Paragraph -->
+   
+<div class="row demo-row">
+    <div class="span12">
+     <h3 class="demo-panel-title">Glyphs <small>(30)</small></h3>
+      <div class="demo-icons">        
+        <div class="demo-content">
+          <span class="fui-arrow-right"></span>
+          <span class="fui-arrow-left"></span>
+          <span class="fui-cmd"></span>
+          <span class="fui-check-inverted"></span>
+          <span class="fui-heart"></span>
+          <span class="fui-location"></span>
+          <span class="fui-plus"></span>
+          <span class="fui-check"></span>
+          <span class="fui-cross"></span>
+          <span class="fui-list"></span>
+          <span class="fui-new"></span>
+          <span class="fui-video"></span>
+          <span class="fui-photo"></span>
+          <span class="fui-volume"></span>
+          <span class="fui-time"></span>
+          <span class="fui-eye"></span>
+          <span class="fui-chat"></span>
+          <span class="fui-search"></span>
+          <span class="fui-user"></span>
+          <span class="fui-mail"></span>
+          <span class="fui-lock"></span>
+          <span class="fui-gear"></span>
+          <span class="fui-radio-unchecked"></span>
+          <span class="fui-radio-checked"></span>
+          <span class="fui-checkbox-unchecked"></span>
+          <span class="fui-checkbox-checked"></span>
+          <span class="fui-calendar-solid"></span>
+          <span class="fui-pause"></span>
+          <span class="fui-play"></span>
+          <span class="fui-check-inverted-2"></span>
+        </div>
+      </div> <!-- /demo icons -->
+      </div>
+    </div>
+  <div class="row demo-row">
+    <div class="span12">
+      <h3 class="demo-panel-title">Glyphs <small>Bootstrap (140)</small></h3>
+      <div class="bs-icons clearfix">
+            <div><span class="icon-glass"></span> icon-glass</div>
+            <div><span class="icon-music"></span> icon-music</div>
+            <div><span class="icon-search"></span> icon-search</div>
+            <div><span class="icon-envelope"></span> icon-envelope</div>
+            <div><span class="icon-heart"></span> icon-heart</div>
+            <div><span class="icon-star"></span> icon-star</div>
+            <div><span class="icon-star-empty"></span> icon-star-empty</div>
+            <div><span class="icon-user"></span> icon-user</div>
+            <div><span class="icon-film"></span> icon-film</div>
+            <div><span class="icon-th-large"></span> icon-th-large</div>
+            <div><span class="icon-th"></span> icon-th</div>
+            <div><span class="icon-th-list"></span> icon-th-list</div>
+            <div><span class="icon-ok"></span> icon-ok</div>
+            <div><span class="icon-remove"></span> icon-remove</div>
+            <div><span class="icon-zoom-in"></span> icon-zoom-in</div>
+            <div><span class="icon-zoom-out"></span> icon-zoom-out</div>
+            <div><span class="icon-off"></span> icon-off</div>
+            <div><span class="icon-signal"></span> icon-signal</div>
+            <div><span class="icon-cog"></span> icon-cog</div>
+            <div><span class="icon-trash"></span> icon-trash</div>
+            <div><span class="icon-home"></span> icon-home</div>
+            <div><span class="icon-file"></span> icon-file</div>
+            <div><span class="icon-time"></span> icon-time</div>
+            <div><span class="icon-road"></span> icon-road</div>
+            <div><span class="icon-download-alt"></span> icon-download-alt</div>
+            <div><span class="icon-download"></span> icon-download</div>
+            <div><span class="icon-upload"></span> icon-upload</div>
+            <div><span class="icon-inbox"></span> icon-inbox</div>
+
+            <div><span class="icon-play-circle"></span> icon-play-circle</div>
+            <div><span class="icon-repeat"></span> icon-repeat</div>
+            <div><span class="icon-refresh"></span> icon-refresh</div>
+            <div><span class="icon-list-alt"></span> icon-list-alt</div>
+            <div><span class="icon-lock"></span> icon-lock</div>
+            <div><span class="icon-flag"></span> icon-flag</div>
+            <div><span class="icon-headphones"></span> icon-headphones</div>
+            <div><span class="icon-volume-off"></span> icon-volume-off</div>
+            <div><span class="icon-volume-down"></span> icon-volume-down</div>
+            <div><span class="icon-volume-up"></span> icon-volume-up</div>
+            <div><span class="icon-qrcode"></span> icon-qrcode</div>
+            <div><span class="icon-barcode"></span> icon-barcode</div>
+            <div><span class="icon-tag"></span> icon-tag</div>
+            <div><span class="icon-tags"></span> icon-tags</div>
+            <div><span class="icon-book"></span> icon-book</div>
+            <div><span class="icon-bookmark"></span> icon-bookmark</div>
+            <div><span class="icon-print"></span> icon-print</div>
+            <div><span class="icon-camera"></span> icon-camera</div>
+            <div><span class="icon-font"></span> icon-font</div>
+            <div><span class="icon-bold"></span> icon-bold</div>
+            <div><span class="icon-italic"></span> icon-italic</div>
+            <div><span class="icon-text-height"></span> icon-text-height</div>
+            <div><span class="icon-text-width"></span> icon-text-width</div>
+            <div><span class="icon-align-left"></span> icon-align-left</div>
+            <div><span class="icon-align-center"></span> icon-align-center</div>
+            <div><span class="icon-align-right"></span> icon-align-right</div>
+            <div><span class="icon-align-justify"></span> icon-align-justify</div>
+            <div><span class="icon-list"></span> icon-list</div>
+
+            <div><span class="icon-indent-left"></span> icon-indent-left</div>
+            <div><span class="icon-indent-right"></span> icon-indent-right</div>
+            <div><span class="icon-facetime-video"></span> icon-facetime-video</div>
+            <div><span class="icon-picture"></span> icon-picture</div>
+            <div><span class="icon-pencil"></span> icon-pencil</div>
+            <div><span class="icon-map-marker"></span> icon-map-marker</div>
+            <div><span class="icon-adjust"></span> icon-adjust</div>
+            <div><span class="icon-tint"></span> icon-tint</div>
+            <div><span class="icon-edit"></span> icon-edit</div>
+            <div><span class="icon-share"></span> icon-share</div>
+            <div><span class="icon-check"></span> icon-check</div>
+            <div><span class="icon-move"></span> icon-move</div>
+            <div><span class="icon-step-backward"></span> icon-step-backward</div>
+            <div><span class="icon-fast-backward"></span> icon-fast-backward</div>
+            <div><span class="icon-backward"></span> icon-backward</div>
+            <div><span class="icon-play"></span> icon-play</div>
+            <div><span class="icon-pause"></span> icon-pause</div>
+            <div><span class="icon-stop"></span> icon-stop</div>
+            <div><span class="icon-forward"></span> icon-forward</div>
+            <div><span class="icon-fast-forward"></span> icon-fast-forward</div>
+            <div><span class="icon-step-forward"></span> icon-step-forward</div>
+            <div><span class="icon-eject"></span> icon-eject</div>
+            <div><span class="icon-chevron-left"></span> icon-chevron-left</div>
+            <div><span class="icon-chevron-right"></span> icon-chevron-right</div>
+            <div><span class="icon-plus-sign"></span> icon-plus-sign</div>
+            <div><span class="icon-minus-sign"></span> icon-minus-sign</div>
+            <div><span class="icon-remove-sign"></span> icon-remove-sign</div>
+            <div><span class="icon-ok-sign"></span> icon-ok-sign</div>
+
+            <div><span class="icon-question-sign"></span> icon-question-sign</div>
+            <div><span class="icon-info-sign"></span> icon-info-sign</div>
+            <div><span class="icon-screenshot"></span> icon-screenshot</div>
+            <div><span class="icon-remove-circle"></span> icon-remove-circle</div>
+            <div><span class="icon-ok-circle"></span> icon-ok-circle</div>
+            <div><span class="icon-ban-circle"></span> icon-ban-circle</div>
+            <div><span class="icon-arrow-left"></span> icon-arrow-left</div>
+            <div><span class="icon-arrow-right"></span> icon-arrow-right</div>
+            <div><span class="icon-arrow-up"></span> icon-arrow-up</div>
+            <div><span class="icon-arrow-down"></span> icon-arrow-down</div>
+            <div><span class="icon-share-alt"></span> icon-share-alt</div>
+            <div><span class="icon-resize-full"></span> icon-resize-full</div>
+            <div><span class="icon-resize-small"></span> icon-resize-small</div>
+            <div><span class="icon-plus"></span> icon-plus</div>
+            <div><span class="icon-minus"></span> icon-minus</div>
+            <div><span class="icon-asterisk"></span> icon-asterisk</div>
+            <div><span class="icon-exclamation-sign"></span> icon-exclamation-sign</div>
+            <div><span class="icon-gift"></span> icon-gift</div>
+            <div><span class="icon-leaf"></span> icon-leaf</div>
+            <div><span class="icon-fire"></span> icon-fire</div>
+            <div><span class="icon-eye-open"></span> icon-eye-open</div>
+            <div><span class="icon-eye-close"></span> icon-eye-close</div>
+            <div><span class="icon-warning-sign"></span> icon-warning-sign</div>
+            <div><span class="icon-plane"></span> icon-plane</div>
+            <div><span class="icon-calendar"></span> icon-calendar</div>
+            <div><span class="icon-random"></span> icon-random</div>
+            <div><span class="icon-comment"></span> icon-comment</div>
+            <div><span class="icon-magnet"></span> icon-magnet</div>
+
+            <div><span class="icon-chevron-up"></span> icon-chevron-up</div>
+            <div><span class="icon-chevron-down"></span> icon-chevron-down</div>
+            <div><span class="icon-retweet"></span> icon-retweet</div>
+            <div><span class="icon-shopping-cart"></span> icon-shopping-cart</div>
+            <div><span class="icon-folder-close"></span> icon-folder-close</div>
+            <div><span class="icon-folder-open"></span> icon-folder-open</div>
+            <div><span class="icon-resize-vertical"></span> icon-resize-vertical</div>
+            <div><span class="icon-resize-horizontal"></span> icon-resize-horizontal</div>
+            <div><span class="icon-hdd"></span> icon-hdd</div>
+            <div><span class="icon-bullhorn"></span> icon-bullhorn</div>
+            <div><span class="icon-bell"></span> icon-bell</div>
+            <div><span class="icon-certificate"></span> icon-certificate</div>
+            <div><span class="icon-thumbs-up"></span> icon-thumbs-up</div>
+            <div><span class="icon-thumbs-down"></span> icon-thumbs-down</div>
+            <div><span class="icon-hand-right"></span> icon-hand-right</div>
+            <div><span class="icon-hand-left"></span> icon-hand-left</div>
+            <div><span class="icon-hand-up"></span> icon-hand-up</div>
+            <div><span class="icon-hand-down"></span> icon-hand-down</div>
+            <div><span class="icon-circle-arrow-right"></span> icon-circle-arrow-right</div>
+            <div><span class="icon-circle-arrow-left"></span> icon-circle-arrow-left</div>
+            <div><span class="icon-circle-arrow-up"></span> icon-circle-arrow-up</div>
+            <div><span class="icon-circle-arrow-down"></span> icon-circle-arrow-down</div>
+            <div><span class="icon-globe"></span> icon-globe</div>
+            <div><span class="icon-wrench"></span> icon-wrench</div>
+            <div><span class="icon-tasks"></span> icon-tasks</div>
+            <div><span class="icon-filter"></span> icon-filter</div>
+            <div><span class="icon-briefcase"></span> icon-briefcase</div>
+            <div><span class="icon-fullscreen"></span> icon-fullscreen</div>
+          </div>
+      </div>
+    </div>
+      <!-- Bootstrap Icon Glyphs -->
+   
+
+    </div> <!-- /container -->
+
+   
+    
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>
